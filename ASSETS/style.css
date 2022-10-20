@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family:'IBM+Plex+Mono';
+    color: black;
+}
+body{
+    margin: 2rem;
+    background-color: yellowgreen;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 35%;
+    margin-left: 35%;
+
+    
+}
+/*Background image*/
+#brainy{
+    padding: 5px;
+    border: 4px dashed white;
+    background-position: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 50%;
+    margin-left: 5%;
+}
