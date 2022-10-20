@@ -15,7 +15,7 @@
 <body>
 
 <!--Begin Quiz Button-->
-<div class="begin_btn"><button>Begin Quiz</button></div>
+<div id="begin_btn"><button>Begin Quiz</button></div>
 
 <!--Quiz Container-->
 <div class="quizcontainer">
@@ -29,10 +29,18 @@
 
  <!--Quiz Rules-->
 <div class="quiz_rules">
-    <div class="rules-title"><span>The rules of this Quiz</span></div>
-    <div class="rules-list">
-        
-    </div>
+    <div id="rules-title"><span>The rules of this Quiz</span></div>
+    <div id="rules-list">
+        <div class="rules">1 ~ You will have only <span> 10 seconds </span> to answer each question.</div>
+        <div class="rules">2 ~ As soon as the timer begins you will be presented with a question.</div>
+        <div class="rules">3 ~ When you answer a question incorrectly 2 seconds will be subtracted from the timer.</div>
+        <div class="rules">4 ~ When you have answered all questions or the timer reaches 0, then the game is over.</div>
+        <div class="rules">5 ~ Once you have completed the quiz or the timer reaches 0, you can save your initials and score.</div>
+ </div>
+ <div class="buttons">
+    <button id="quit">Exit Quiz</button>
+    <button id="restart">Continue</button>
+ </div>
 </div>
 
 
