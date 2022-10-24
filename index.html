@@ -17,35 +17,28 @@
 <header>
     <div class="title"><h1> JavaScript-Quiz </h1></div>
   </header>
-
-<!--Button-->
-<div class="container">
-  <div id="question-container">
-    <div id="question">Questions</div>
-    <div id="answer-buttons" class="btn-grid">
-   
-
-    </div>
-
-
-  <div class="button">
-  <button id="begin-btn">Begin Quiz</button>
-  <button id="next-btn">Next</button>
-  <button id="submit-btn">Submit Quiz</button>
-  <button id="results-btn">Results</button>
-</div>
- 
-  </div>
-</div>
-
 <!--Quiz Container-->
-<div class="quizcontainer">
-  
-    <div class="timer">
-        <div id="time_remaining_txt"> Time Remaining </div>
-        <div id="timer_sec">10</div>
+  <div class="Begin-Quiz">
+    <button id="begin-button">Begin Quiz</button>
+  </div>
+  <div id="display-container">
+    <div class="header">
+      <div class="number-of-count">
+        <span class="number-of-question">1 of 5 questions</span>
+      </div>
+      <div class="timer-div">
+        <img src="timer-icon.svg" />
+        <span class="time-remaining">10s</span>
+      </div>
     </div>
- 
+    <div id="container">
+      <!-- Quiz questions and Choices will be displayed here -->
+    </div>
+    <button id="next-button">Next</button>
+  </div>
+  <div class="score-container hide">
+    <div id="user-score">Your Score</div>
+  </div> 
 
  <!--Quiz Rules-->
 <div class="quiz_rules">
@@ -56,64 +49,9 @@
         <div class="rules">3 ~ When you answer a question incorrectly 2 seconds will be subtracted from the timer.</div>
         <div class="rules">4 ~ When you have answered all questions or the timer reaches 0, then the Quiz is over.</div>
         <div class="rules">5 ~ Once you have completed the quiz or the timer reaches 0, you can save your initials and score.</div>
- </div>
+    </div>
 
-  
-
-
-
-
-
-
-
-
-    
-   
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!--JavaScript-->
 <script src="./assets/script.js"> </script>
 </body>
 </html>
