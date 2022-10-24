@@ -13,35 +13,52 @@
 </head>
 
 <body>
+<header>
+    <div class="title"><h1> JavaScript-Quiz </h1></div>
+  </header>
 
-<!--Begin Quiz Button-->
-<div id="begin_btn"><button>Begin Quiz</button></div>
+<!--Button-->
+<div class="container">
+  <div id="question-container">
+    <div id="question">Questions</div>
+    <div id="answer-buttons" class="btn-grid">
+   
+
+    </div>
+
+
+  <div class="button">
+  <button id="begin-btn">Begin Quiz</button>
+  <button id="next-btn">Next</button>
+  <button id="submit-btn">Submit Quiz</button>
+  <button id="results-btn">Results</button>
+</div>
+ 
+  </div>
+</div>
 
 <!--Quiz Container-->
 <div class="quizcontainer">
-  <header>
-    <div class="title"><h1> JavaScript-Quiz </h1></div>
+  
     <div class="timer">
-        <div class="time_remaining_txt"> Time Remaining </div>
-        <div class="timer_sec">10</div>
+        <div id="time_remaining_txt"> Time Remaining </div>
+        <div id="timer_sec">10</div>
     </div>
- </header>
+ 
 
  <!--Quiz Rules-->
 <div class="quiz_rules">
     <div id="rules-title"><span>The rules of this Quiz</span></div>
     <div id="rules-list">
-        <div class="rules">1 ~ You will have only <span> 10 seconds </span> to answer each question.</div>
+        <div class="rules">1 ~ You will have 10 seconds to answer each question.</div>
         <div class="rules">2 ~ As soon as the timer begins you will be presented with a question.</div>
         <div class="rules">3 ~ When you answer a question incorrectly 2 seconds will be subtracted from the timer.</div>
-        <div class="rules">4 ~ When you have answered all questions or the timer reaches 0, then the game is over.</div>
+        <div class="rules">4 ~ When you have answered all questions or the timer reaches 0, then the Quiz is over.</div>
         <div class="rules">5 ~ Once you have completed the quiz or the timer reaches 0, you can save your initials and score.</div>
  </div>
- <div class="buttons">
-    <button id="quit">Exit Quiz</button>
-    <button id="restart">Continue</button>
- </div>
-</div>
+
+  
+
 
 
 
@@ -53,7 +70,7 @@
    
 
 
-   </header>
+  
 
 
 
@@ -96,6 +113,6 @@
 
 
 
-<script src="./assets/script.js"></script>
+<script src="./assets/script.js"> </script>
 </body>
 </html>
