@@ -1,7 +1,7 @@
-const BeginQuizButton = document.getElementById('begin-btn')
-const questionContainerElement = document.getElementById('question-container')
-const questionElement = document.getElementById('question')
-const answerButtonElement = document.getElementById('answer-button')
+var BeginQuizButton = document.getElementById('begin-btn')
+var questionContainerElement = document.getElementById('question-container')
+var questionElement = document.getElementById('question')
+var answerButtonElement = document.getElementById('answer-button')
 
 let currentQuestionIndex
 
@@ -22,6 +22,7 @@ function setNextQuestion(){
 
 function showQuestion(question){
     questionElement.innerText = question.question 
+    question.answers
     
 
 }
