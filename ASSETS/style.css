@@ -27,7 +27,7 @@ body{
     color: black;  
 }
 
-container{
+.container{
     display: flex;
     background-color: green;
     height: 80%;
@@ -51,7 +51,9 @@ container{
     color: hotpink;
 }
 
-btn {
+.btn {
+    margin: 6px;
+    cursor: pointer;
     border: 4px solid white;
     background-color: grey;
     padding: 10px;
@@ -60,7 +62,14 @@ btn {
     font-family: 'IBM plex Mono, monospace';
     color: white
 }
-button:hover{
-    background: hotpink;
-
+.choices{
+    padding: 10px;
+    order: 4;
+}
+.controls{
+    padding: 10px;
+    order: 5;
+}
+.hide{
+    display: none;
 }
