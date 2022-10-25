@@ -12,46 +12,40 @@
     <img id="brainy" src="assets/images/brainy.png" width ="500" height ="350"
      alt="white background with Quiz in white writing in the center">
 </head>
-
+<header> </header>
 <body>
-<header>
-    <div class="title"><h1> JavaScript-Quiz </h1></div>
-  </header>
 <!--Quiz Container-->
-  <div class="Begin-Quiz">
-    <button id="begin-button">Begin Quiz</button>
-  </div>
-  <div id="display-container">
-    <div class="header">
-      <div class="number-of-count">
-        <span class="number-of-question">1 of 5 questions</span>
+  <div class="container">
+    <div class="score">
+      <span id="player-score">0</span>
+      <span></span>
+      <span id="total-score">0</span>
       </div>
-      <div class="timer-div">
-        <img src="timer-icon.svg" />
-        <span class="time-remaining">10s</span>
-      </div>
-    </div>
-    <div id="container">
-      <!-- Quiz questions and Choices will be displayed here -->
-    </div>
-    <button id="next-button">Next</button>
-  </div>
-  <div class="score-container hide">
-    <div id="user-score">Your Score</div>
-  </div> 
 
- <!--Quiz Rules-->
-<div class="quiz_rules">
-    <div id="rules-title"><span>The rules of this Quiz</span></div>
-    <div id="rules-list">
-        <div class="rules">1 ~ You will have 10 seconds to answer each question.</div>
-        <div class="rules">2 ~ As soon as the timer begins you will be presented with a question.</div>
-        <div class="rules">3 ~ When you answer a question incorrectly 2 seconds will be subtracted from the timer.</div>
-        <div class="rules">4 ~ When you have answered all questions or the timer reaches 0, then the Quiz is over.</div>
-        <div class="rules">5 ~ Once you have completed the quiz or the timer reaches 0, you can save your initials and score.</div>
+  <div class="main" id="quiz-question">
+    <div id="q-text"></div>
+    <div class="choices">
+      <button class="btn btn-choices" id="True">True</button>
+      <button class="btn btn-choices" id="False">False</button>
     </div>
+  </div>
+  
+  <div class="controls">
+    <button class="btn btn-restart" id="restart">Restart</button>
+    <button class="btn btn-back" id="back">back</button>
+    <button class="btn btn-next" id="next">Next</button>
+    <button class="btn btn-submit" id="Submit">Submit</button>
+
+  </div>
+</body>
+
+  
+
+
+
+
 
 <!--JavaScript-->
 <script src="./assets/script.js"> </script>
-</body>
+
 </html>
