@@ -8,7 +8,7 @@ A timed coding quiz with multiple-choice questions.
 * HTML
 * JAVASCRIPT
 * STYLE CSS
-A times coding quix with multiple-choice questions.
+
 
 
 ## Code
