@@ -21,8 +21,8 @@ let questions = [
     question: "Under which HTML element do we include JavaScript?",
     answers: [
         
-        {choices: "<script>", answer: true},
-        {choices: "<javascript>", "<jss>", "<script.js>",answer:false},
+        {choices: "<script>", answer:true},
+        {choices: "<javascript>","<jss>": "<script.js>",answer:false}
         
     ]
     },
@@ -33,7 +33,7 @@ let questions = [
     answers: [
         
         {choices: "JavaScript in body or head: Scripts can be placed inside the body or the head section of an HTML page or inside both head and body", answer: true},
-        {choices: "<title>","<head>", "<body>",answer:false},
+        {choices: "<title>","<head>": "<body>",answer:false}
     ]
     },
     
@@ -42,7 +42,7 @@ let questions = [
     question: "How do you create a function in JavaScript?",
     answers: [
         {choices:"function xxx()",answer:true},
-        {choices:"function = xxx()", "function.xxx()", "function:xxx()",answer:false},  
+        {choices:"function = xxx()", "function.xxx()": "function:xxx()",answer:false}
     ]
     },
 
@@ -50,16 +50,16 @@ let questions = [
     question: "How to write an IF statement in JavaScript?",
     answers: [
         {choices:"if (i == 5)", answer:true},
-        {choices:"if (i = 5)", "if i = 5 then", "if i = 5 ",answer:false},
+        {choices:"if (i = 5)","if i = 5 then": "if i = 5 ",answer:false}
 
     ]
-    }
+    },
 
     {
     question: "How can you add a comment in JavaScript?",
     answers: [
-        {choices:"//Comment here", answer:true,}
-        {choices:"/*Comment here*/", "<!--Comment here-->", "'Comment here'",answer:false}
+        {choices:"//Comment here", answer:true,},
+        {choices:"/*Comment here*/","<!--Comment here-->": "'Comment here'",answer:false}
 
     ]
     }
@@ -87,11 +87,12 @@ const interval = setInterval(function(){
  function startQuiz() {
     currentQuestion = 0;
     totalscore.innerHTML = questions.length;
-    questionText.innerHTML = questions[currentQuestion].question;
+    qText.innerHTML = questions[currentQuestion].question;
     trueBtn.innerHTML = questions[currentQuestion].answers[0].choices;
     trueBtn.onclick = () => {
-        if (questions[currentQuestion],answers[0].answer)}
+        if (questions[currentQuestion],answers[0].answer)
         if(score < 5) {score ++;}
+    }
  
  playerscore.innerHTML = score;
  if(currentQuestion <4){next();
@@ -130,7 +131,7 @@ function next(){
         nextBtn.classList.add("hide");
         backBtn.classList.add("hide");}
 
-    questionText.innerHTML = questions[currentQuestion].question;
+    qtext.innerHTML = questions[currentQuestion].question;
     trueBtn.innerHTML = questions[currentQuestion].answer[0].choices;
     trueBtn.onclick = () => {
         if(questions[currentQuestion].answers[0].answer){
@@ -164,7 +165,7 @@ function back(){
         nextBtn.classList.remove("hide");
         backBtn.classList.add("hide");
     }
-    questionText.innerHTML = questions[currentQuestion].question;
+    qtext.innerHTML = questions[currentQuestion].question;
     trueBtn.innerHTML = questions[currentQuestion].answers[0].choices;
     trueBtn.onclick = () => {
         if (questions[currentQuestion].answers[0].answer){
