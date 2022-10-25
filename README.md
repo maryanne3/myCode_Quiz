@@ -12,6 +12,5 @@ A times coding quix with multiple-choice questions.
 
 
 ## Code
-
 ![](assets/images/code%20snap.png)
 
