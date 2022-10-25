@@ -6,8 +6,10 @@ A times coding quix with multiple-choice questions.
 
 ## Technologies used 
 * HTML
-* JAVACRIPT
+* JAVASCRIPT
 * STYLE CSS
+A times coding quix with multiple-choice questions.
+
 
 ## Code
 ![](assets/images/code%20snap.png)
